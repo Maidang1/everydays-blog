@@ -1,0 +1,31 @@
+{
+  "name": "everydays-blog",
+  "version": "1.0.0",
+  "description": "Crawl web blogs",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo this is a test",
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maidang1/everydays-blog.git"
+  },
+  "keywords": [
+    "blog",
+    "crawl"
+  ],
+  "author": {
+    "name": "maidang",
+    "email": "497350746@qq.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Maidang1/everydays-blog/issues"
+  },
+  "homepage": "https://github.com/Maidang1/everydays-blog#readme",
+  "dependencies": {
+    "cheerio": "1.0.0-rc.11",
+    "puppeteer": "^14.4.0"
+  }
+}
