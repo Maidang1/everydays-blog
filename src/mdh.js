@@ -1,4 +1,5 @@
 const cheerio = require('cheerio');
+const { checkIsRun } = require('./utils');
 const MDHBlog = async (browser, blogsMap, parseData) => {
   const baseURL = 'https://www.yuque.com';
   const page = await browser.newPage();
@@ -34,11 +35,7 @@ const MDHBlog = async (browser, blogsMap, parseData) => {
   list = list.slice(0, -2);
   await bodyHandle.dispose();
 
-  if (
-    !parseData.mdn ||
-    parseData.mdn.title !== title ||
-    new Date().toDateString() === parseData.mdn.date
-  ) {
+  if (checkIsRun(parseData, 'mdh', title)) {
     blogsMap.push({
       title: title,
       list: list,

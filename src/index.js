@@ -2,6 +2,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 const { MDHBlog } = require('./mdh');
+const { V8Blog } = require('./v8-dev');
 
 const blogsMap = [];
 const parseData = JSON.parse(
@@ -9,7 +10,10 @@ const parseData = JSON.parse(
 );
 async function main() {
   const browser = await puppeteer.launch();
-  await MDHBlog(browser, blogsMap, parseData);
+  await Promise.all([
+    MDHBlog(browser, blogsMap, parseData),
+    V8Blog(browser, blogsMap, parseData),
+  ]);
   generateBlogs(blogsMap);
 
   await browser.close();
@@ -18,15 +22,17 @@ async function main() {
 main();
 
 function generateBlogs(blogs) {
+  console.log({ blogs });
   const outputDir = path.join(__dirname, '../blogs');
   console.log({ outputDir });
   const fileName = new Date().toDateString();
   let mdStr = '';
   blogs.forEach((blog) => {
-    mdStr =
+    mdStr +=
       `# ${blog.title} \n` +
       `${blog.list.map((item) => `- [${item.title}](${item.link})`).join('\n')}
-      `;
+      ` +
+      '\n';
   });
   fs.writeFileSync(`${outputDir}/${fileName}.md`, mdStr);
   // 重新记录records
