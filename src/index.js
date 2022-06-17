@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const { MDHBlog } = require('./mdh');
 const { V8Blog } = require('./v8-dev');
+const { webDevBlog } = require('./web-dev')
 
 const blogsMap = [];
 const parseData = JSON.parse(
@@ -13,6 +14,7 @@ async function main() {
   await Promise.all([
     MDHBlog(browser, blogsMap, parseData),
     V8Blog(browser, blogsMap, parseData),
+    webDevBlog(browser, blogsMap, parseData),
   ]);
   generateBlogs(blogsMap);
 
