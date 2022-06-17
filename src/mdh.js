@@ -34,13 +34,18 @@ const MDHBlog = async (browser, blogsMap, parseData) => {
   list = list.slice(0, -2);
   await bodyHandle.dispose();
 
-  if (!parseData.mdn || parseData.mdn.title !== title) {
+  if (
+    !parseData.mdn ||
+    parseData.mdn.title !== title ||
+    new Date().toDateString() === parseData.mdn.date
+  ) {
     blogsMap.push({
       title: title,
       list: list,
     });
     parseData.mdn = {
       title: title,
+      date: new Date().toDateString(),
     };
   }
 };
