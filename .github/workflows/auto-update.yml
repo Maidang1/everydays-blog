@@ -1,9 +1,6 @@
 name: auto-update
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     - cron: '0 0 * * *'
 
@@ -19,7 +16,7 @@ jobs:
       - name: Commit and push if changed
         run: |-
           git config user.email "497350746@qq.com"
-          git config user.name "Maidang"
+          git config user.name "Maidang1"
           git pull
           git add -A
           git commit -m "Auto update" || exit 0

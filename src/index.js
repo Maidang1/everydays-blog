@@ -4,6 +4,7 @@ const path = require('path');
 const { MDHBlog } = require('./mdh');
 const { V8Blog } = require('./v8-dev');
 const { webDevBlog } = require('./web-dev')
+const { theoDoBlog } = require('./theodo')
 
 const blogsMap = [];
 const parseData = JSON.parse(
@@ -15,7 +16,9 @@ async function main() {
     MDHBlog(browser, blogsMap, parseData),
     V8Blog(browser, blogsMap, parseData),
     webDevBlog(browser, blogsMap, parseData),
+    theoDoBlog(browser, blogsMap, parseData),
   ]);
+  
   generateBlogs(blogsMap);
 
   await browser.close();
@@ -26,7 +29,6 @@ main();
 function generateBlogs(blogs) {
   console.log({ blogs });
   const outputDir = path.join(__dirname, '../blogs');
-  console.log({ outputDir });
   const fileName = new Date().toDateString();
   let mdStr = '';
   blogs.forEach((blog) => {
