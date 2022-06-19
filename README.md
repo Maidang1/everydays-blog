@@ -7,6 +7,3 @@
 [![Top contributors](https://images.repography.com/24639508/Maidang1/everydays-blog/recent-activity/96a82f342996d7d9f55d9d0f44c2f029_users.svg)](https://github.com/Maidang1/everydays-blog/graphs/contributors)
 
 
-## [![Repography logo](https://images.repography.com/logo.svg)](https://repography.com) / Top contributors
-[![Top contributors](https://images.repography.com/24639508/Maidang1/everydays-blog/top-contributors/96a82f342996d7d9f55d9d0f44c2f029_table.svg)](https://github.com/Maidang1/everydays-blog/graphs/contributors)
-
