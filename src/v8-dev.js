@@ -1,7 +1,6 @@
 const cheerio = require('cheerio');
-const { checkIsRun } = require('./utils');
 
-const V8Blog = async (browser, blogsMap, parseData) => {
+const V8Blog = async (browser, parseData) => {
   const baseURL = 'https://v8.dev';
   const page = await browser.newPage();
   await page.goto(baseURL + '/blog');
@@ -14,21 +13,20 @@ const V8Blog = async (browser, blogsMap, parseData) => {
 
   const href = content.attr('href');
   const title = href.replace('/blog/', '');
-  if (checkIsRun(parseData, 'v8', title)) {
-    blogsMap.push({
-      title: 'V8 blog',
-      list: [
-        {
-          title,
-          link: `${baseURL}${href}`,
-        },
-      ],
-    });
-    parseData.v8 = {
-      title,
-      date: new Date().toDateString(),
-    };
+  let shouldSave = false;
+
+  if (parseData.v8) {
+    const links = parseData.v8.map((item) => item.link);
+    shouldSave = !links.includes(href);
+  } else {
+    shouldSave = true;
+    parseData.v8 = [];
   }
+  shouldSave &&
+    parseData.v8.push({
+      title,
+      link: href,
+    });
 };
 
 module.exports = { V8Blog };

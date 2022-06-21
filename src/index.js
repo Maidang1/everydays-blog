@@ -3,23 +3,23 @@ const fs = require('fs');
 const path = require('path');
 const { MDHBlog } = require('./mdh');
 const { V8Blog } = require('./v8-dev');
-const { webDevBlog } = require('./web-dev')
-const { theoDoBlog } = require('./theodo')
+const { webDevBlog } = require('./web-dev');
+const { theoDoBlog } = require('./theodo');
 
-const blogsMap = [];
 const parseData = JSON.parse(
   fs.readFileSync(path.join(__dirname, '../records/record.json'), 'utf8')
 );
 async function main() {
   const browser = await puppeteer.launch();
+  console.log({ parseData });
   await Promise.all([
-    MDHBlog(browser, blogsMap, parseData),
-    V8Blog(browser, blogsMap, parseData),
-    webDevBlog(browser, blogsMap, parseData),
-    theoDoBlog(browser, blogsMap, parseData),
+    MDHBlog(browser, parseData),
+    V8Blog(browser, parseData),
+    webDevBlog(browser, parseData),
+    theoDoBlog(browser, parseData),
   ]);
-  
-  generateBlogs(blogsMap);
+
+  generateBlogs(parseData);
 
   await browser.close();
 }
@@ -27,18 +27,22 @@ async function main() {
 main();
 
 function generateBlogs(blogs) {
-  console.log({ blogs });
-  const outputDir = path.join(__dirname, '../blogs');
-  const fileName = new Date().toDateString();
+  const outputFile = path.join(__dirname, '../README.md');
+  const header = fs.readFileSync(
+    path.join(__dirname, './template.md'),
+    'utf-8'
+  );
   let mdStr = '';
-  blogs.forEach((blog) => {
-    mdStr +=
-      `# ${blog.title} \n` +
-      `${blog.list.map((item) => `- [${item.title}](${item.link})`).join('\n')}
-      ` +
-      '\n';
+  mdStr += header;
+  Object.keys(blogs).forEach((key) => {
+    const list = parseData[key];
+    mdStr += `# ${key}` + '\n';
+    list.forEach((blog) => {
+      mdStr += `- [${blog.title}](${blog.link})` + '\n';
+    });
   });
-  fs.writeFileSync(`${outputDir}/${fileName}.md`, mdStr);
+
+  fs.writeFileSync(outputFile, mdStr);
   // 重新记录records
   fs.writeFileSync(
     path.join(__dirname, '../records/record.json'),

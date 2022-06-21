@@ -1,6 +1,6 @@
 const cheerio = require('cheerio');
 const { checkIsRun } = require('./utils');
-const MDHBlog = async (browser, blogsMap, parseData) => {
+const MDHBlog = async (browser, parseData) => {
   const baseURL = 'https://www.yuque.com';
   const page = await browser.newPage();
   await page.goto('https://www.yuque.com/mdh/weekly');
@@ -34,17 +34,16 @@ const MDHBlog = async (browser, blogsMap, parseData) => {
   });
   list = list.slice(0, -2);
   await bodyHandle.dispose();
+  let shouldSavedLinks = [];
 
-  if (checkIsRun(parseData, 'mdh', title)) {
-    blogsMap.push({
-      title: title,
-      list: list,
-    });
-    parseData.mdn = {
-      title: title,
-      date: new Date().toDateString(),
-    };
+  if (parseData.mdh) {
+    const savedLinks = parseData.mdh.map((item) => item.link);
+    shouldSavedLinks = list.filter((item) => !savedLinks.includes(item.link));
+  } else {
+    parseData.mdh = [];
+    shouldSavedLinks = list;
   }
+  parseData.mdh.push(...shouldSavedLinks);
 };
 
 module.exports = { MDHBlog };
