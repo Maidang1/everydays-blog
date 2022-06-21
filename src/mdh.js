@@ -1,5 +1,4 @@
 const cheerio = require('cheerio');
-const { checkIsRun } = require('./utils');
 const MDHBlog = async (browser, parseData) => {
   const baseURL = 'https://www.yuque.com';
   const page = await browser.newPage();

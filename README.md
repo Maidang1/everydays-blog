@@ -1,17 +1,15 @@
-# ·爬取自己喜欢的博客网站的博客
+# 爬取自己喜欢的博客网站的博客
 
 > 同时欢迎在issue里面添加链接
+<div align=center>
+  <img src="https://bing.com/th?id=OHR.GlastonburySolstice_ZH-CN9694169797_800x480.jpg" />
+  </div>
 
-# v8
-
+  # v8
 - [discontinuing-release-posts](/blog/discontinuing-release-posts)
-
 # webdev
-
 - [First-party cookie recipes](https://web.dev/first-party-cookie-recipes/)
-
 # mdh
-
 - [软件工程之软技能](https://addyosmani.com/blog/software-engineering-soft-parts/)
 - [Moon](https://moonrepo.dev/)
 - [tauri 1](https://tauri.app/v1/guides/)
@@ -20,9 +18,7 @@
 - [面试面试官](https://github.com/readme/guides/technical-interviews)
 - [MICROVIUM](https://coder-mike.com/blog/2022/06/11/microvium-is-very-small/)
 - [React 组件库维护经验](https://www.gabe.pizza/notes-on-component-libraries/)
-
 # theodo
-
 - [Serverless, DynamoDB, Streams, Filter Patterns and You](https://blog.theodo.com/2022/04/dynamodb-streams-serverless-filter-patterns-and-you/)
 - [Why it’s time to consider Azure to host your static application](https://blog.theodo.com/2020/06/consider-azure-static-app/)
 - [Increasing user acquisition by 15% through experiments on the onboarding funnel](https://blog.theodo.com/2022/06/improving-user-onboarding-funnel/)

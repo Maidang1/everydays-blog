@@ -5,13 +5,16 @@ const { MDHBlog } = require('./mdh');
 const { V8Blog } = require('./v8-dev');
 const { webDevBlog } = require('./web-dev');
 const { theoDoBlog } = require('./theodo');
+const { BingPage } = require('./bing');
 
 const parseData = JSON.parse(
   fs.readFileSync(path.join(__dirname, '../records/record.json'), 'utf8')
 );
+let imgUrl = '';
 async function main() {
   const browser = await puppeteer.launch();
-  console.log({ parseData });
+  // console.log({ parseData });
+  imgUrl = await BingPage(browser);
   await Promise.all([
     MDHBlog(browser, parseData),
     V8Blog(browser, parseData),
@@ -34,6 +37,11 @@ function generateBlogs(blogs) {
   );
   let mdStr = '';
   mdStr += header;
+  mdStr += `<div align=center>
+  <img src="${imgUrl}" />
+  </div>
+
+  `;
   Object.keys(blogs).forEach((key) => {
     const list = parseData[key];
     mdStr += `# ${key}` + '\n';

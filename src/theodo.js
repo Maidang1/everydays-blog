@@ -1,5 +1,4 @@
 const cheerio = require('cheerio');
-const { checkIsRun } = require('./utils');
 
 const theoDoBlog = async (browser, parseData) => {
   const baseURL = 'https://blog.theodo.com';

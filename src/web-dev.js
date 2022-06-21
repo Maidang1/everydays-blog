@@ -1,5 +1,4 @@
 const cheerio = require('cheerio');
-const { checkIsRun } = require('./utils');
 
 const webDevBlog = async (browser, parseData) => {
   const baseURL = 'https://web.dev';
