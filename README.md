@@ -2,7 +2,7 @@
 
 > 同时欢迎在issue里面添加链接
 <div align=center>
-  <img src="https://bing.com/th?id=OHR.CenoteDiver_ZH-CN7334440742_800x480.jpg" />
+  <img src="https://bing.com/th?id=OHR.BBMomCub_ZH-CN7715738841_800x480.jpg" />
   </div>
 
   # v8
