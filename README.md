@@ -2,7 +2,7 @@
 
 > 同时欢迎在issue里面添加链接
 <div align=center>
-  <img src="https://bing.com/th?id=OHR.ValensoleLavender_ZH-CN8778885260_800x480.jpg" />
+  <img src="https://bing.com/th?id=OHR.PhangNgaBay_ZH-CN9408705933_800x480.jpg" />
   </div>
 
   # v8
@@ -18,6 +18,11 @@
 - [面试面试官](https://github.com/readme/guides/technical-interviews)
 - [MICROVIUM](https://coder-mike.com/blog/2022/06/11/microvium-is-very-small/)
 - [React 组件库维护经验](https://www.gabe.pizza/notes-on-component-libraries/)
+- [Umi 4](https://mp.weixin.qq.com/s/uLYTWgXoIEPPD-2xUntjEA)
+- [如何利用 Why、What、How 框架更好地写作](https://eugeneyan.com/writing/writing-docs-why-what-how/)
+- [Oh Shit, Git](https://ohshitgit.com/)
+- [Defensive CSS](https://defensivecss.dev/)
+- [Taze](https://github.com/antfu/taze)
 # theodo
 - [Serverless, DynamoDB, Streams, Filter Patterns and You](https://blog.theodo.com/2022/04/dynamodb-streams-serverless-filter-patterns-and-you/)
 - [Why it’s time to consider Azure to host your static application](https://blog.theodo.com/2020/06/consider-azure-static-app/)
