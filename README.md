@@ -2,7 +2,7 @@
 
 > 同时欢迎在issue里面添加链接
 <div align=center>
-  <img src="https://bing.com/th?id=OHR.SummerDogs_ZH-CN1604998367_800x480.jpg" />
+  <img src="https://bing.com/th?id=OHR.SharavatiBridge_ZH-CN2011371774_800x480.jpg" />
   </div>
 
   # v8
@@ -23,6 +23,13 @@
 - [Oh Shit, Git](https://ohshitgit.com/)
 - [Defensive CSS](https://defensivecss.dev/)
 - [Taze](https://github.com/antfu/taze)
+- [Fresh 1.0](https://deno.com/blog/fresh-is-stable)
+- [逃离 SPA](https://nolanlawson.com/2022/05/21/the-balance-has-shifted-away-from-spas/)
+- [框架流行度](https://gist.github.com/tkrotoff/b1caa4c3a185629299ec234d2314e190)
+- [1X 工程师](https://1x.engineer/)
+- [Remix 数据流](https://remix.run/blog/remix-data-flow)
+- [Father 4 RC](https://zhuanlan.zhihu.com/p/535698336)
+- [ES2022](https://2ality.com/2022/06/ecmascript-2022.html)
 # theodo
 - [Serverless, DynamoDB, Streams, Filter Patterns and You](https://blog.theodo.com/2022/04/dynamodb-streams-serverless-filter-patterns-and-you/)
 - [Why it’s time to consider Azure to host your static application](https://blog.theodo.com/2020/06/consider-azure-static-app/)
