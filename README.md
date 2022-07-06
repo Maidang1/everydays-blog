@@ -2,7 +2,7 @@
 
 > 同时欢迎在issue里面添加链接
 <div align=center>
-  <img src="https://bing.com/th?id=OHR.SharavatiBridge_ZH-CN2011371774_800x480.jpg" />
+  <img src="https://bing.com/th?id=OHR.KissingPuffins_ZH-CN2578608262_800x480.jpg" />
   </div>
 
   # v8
@@ -39,3 +39,4 @@
 - [Writing Quality Code Using the Chain of Responsibility Pattern](https://blog.theodo.com/2022/04/chain-of-responsibility-design-pattern/)
 - [Spice up Your Website with a DocuSign Electronic Signature Embedded Tool](https://blog.theodo.com/2021/04/embed-docusign-electronic-signature/)
 - [Working with a Third-party Provider, Three Lessons I Learned to Reduce the Lead Time](https://blog.theodo.com/2022/04/reduce-leadtime-provider/)
+- [React Hook Forms, and how to use it effectively... probably](https://blog.theodo.com/2022/06/react-hook-forms/)
