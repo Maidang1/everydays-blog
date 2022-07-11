@@ -2,7 +2,7 @@
 
 > 同时欢迎在issue里面添加链接
 <div align=center>
-  <img src="https://bing.com/th?id=OHR.OludenizTurkey_ZH-CN3467496108_800x480.jpg" />
+  <img src="https://bing.com/th?id=OHR.BarcelonaPop_ZH-CN3687855585_800x480.jpg" />
   </div>
 
   # v8
@@ -30,6 +30,11 @@
 - [Remix 数据流](https://remix.run/blog/remix-data-flow)
 - [Father 4 RC](https://zhuanlan.zhihu.com/p/535698336)
 - [ES2022](https://2ality.com/2022/06/ecmascript-2022.html)
+- [Bun 公测](https://bun.sh/)
+- [React 状态管理新浪潮](https://frontendmastery.com/posts/the-new-wave-of-react-state-management/)
+- [尤雨溪：前端趋势 2022](https://juejin.cn/post/7117208851945881613)
+- [Turborepo 两大特性](https://www.maxpou.fr/turborepo)
+- [skr canvas](https://github.com/Brooooooklyn/canvas)
 # theodo
 - [Serverless, DynamoDB, Streams, Filter Patterns and You](https://blog.theodo.com/2022/04/dynamodb-streams-serverless-filter-patterns-and-you/)
 - [Why it’s time to consider Azure to host your static application](https://blog.theodo.com/2020/06/consider-azure-static-app/)
