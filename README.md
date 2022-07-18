@@ -2,7 +2,7 @@
 
 > 同时欢迎在issue里面添加链接
 <div align=center>
-  <img src="https://bing.com/th?id=OHR.AmericanGoldfinch_ZH-CN2996912015_800x480.jpg" />
+  <img src="https://bing.com/th?id=OHR.OmijimaIsland_ZH-CN3328515301_800x480.jpg" />
   </div>
 
   # v8
@@ -35,6 +35,13 @@
 - [尤雨溪：前端趋势 2022](https://juejin.cn/post/7117208851945881613)
 - [Turborepo 两大特性](https://www.maxpou.fr/turborepo)
 - [skr canvas](https://github.com/Brooooooklyn/canvas)
+- [构建面向未来的前端架构](https://frontendmastery.com/posts/building-future-facing-frontend-architectures/)
+- [Vite 3](https://vitejs.dev/blog/announcing-vite3.html)
+- [CSS Variables 2](https://www.bram.us/2022/07/08/the-future-of-css-variable-units-powered-by-custom-properties/)
+- [最伟大的程序员](https://swizec.com/blog/what-makes-a-great-software-engineer/)
+- [DRY 过誉](https://gordonc.bearblog.dev/dry-most-over-rated-programming-principle/)
+- [SolidJS](https://blog.startifact.com/posts/solidjs-fits-my-brain/)
+- [ESM Main 检测](https://2ality.com/2022/07/nodejs-esm-main.html)
 # theodo
 - [Serverless, DynamoDB, Streams, Filter Patterns and You](https://blog.theodo.com/2022/04/dynamodb-streams-serverless-filter-patterns-and-you/)
 - [Why it’s time to consider Azure to host your static application](https://blog.theodo.com/2020/06/consider-azure-static-app/)
