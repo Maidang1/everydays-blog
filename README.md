@@ -2,7 +2,7 @@
 
 > 同时欢迎在issue里面添加链接
 <div align=center>
-  <img src="https://bing.com/th?id=OHR.FiordlandRainforest_ZH-CN4528847139_800x480.jpg" />
+  <img src="https://bing.com/th?id=OHR.NoctilucentClouds_ZH-CN4816301354_800x480.jpg" />
   </div>
 
   # v8
@@ -42,6 +42,12 @@
 - [DRY 过誉](https://gordonc.bearblog.dev/dry-most-over-rated-programming-principle/)
 - [SolidJS](https://blog.startifact.com/posts/solidjs-fits-my-brain/)
 - [ESM Main 检测](https://2ality.com/2022/07/nodejs-esm-main.html)
+- [迁移最佳实践](https://frontendmastery.com/posts/frontend-migration-guide/)
+- [构建你自己的框架](https://vercel.com/blog/build-your-own-web-framework)
+- [程序员成长路径](http://www.engineeringladders.com/)
+- [:has 选择器](https://blog.logrocket.com/advanced-guide-css-has-selector/)
+- [Storybook 7 新设计](https://storybook.js.org/blog/storybook-7-0-design-sneak-peek/)
+- [React Query 4](https://tanstack.com/blog/announcing-tanstack-query-v4)
 # theodo
 - [Serverless, DynamoDB, Streams, Filter Patterns and You](https://blog.theodo.com/2022/04/dynamodb-streams-serverless-filter-patterns-and-you/)
 - [Why it’s time to consider Azure to host your static application](https://blog.theodo.com/2020/06/consider-azure-static-app/)
